@@ -3,13 +3,13 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.2"
+    compileSdkVersion buildConfig.compileSdkVersion
+    buildToolsVersion buildConfig.buildToolsVersion
 
     defaultConfig {
         applicationId "com.example.jack.funbokkeeping"
-        minSdkVersion 22
-        targetSdkVersion 30
+        minSdkVersion buildConfig.minSdkVersion
+        targetSdkVersion buildConfig.targetSdkVersion
         versionCode 1
         versionName "1.0"
 
@@ -24,14 +24,27 @@ android {
     }
 }
 
+task formatApply(dependsOn: 'spotlessApply', group: 'Verification')
+preBuild.dependsOn formatApply
+
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.core:core-ktx:1.3.2'
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation project(':fun_utlis')
 
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:${buildConfig.kotlin_version}"
+    implementation "androidx.core:core-ktx:${androidx.coreKtx}"
+    implementation "androidx.appcompat:appcompat:${androidx.appcompat}"
+    implementation "androidx.constraintlayout:constraintlayout:${androidx.constraintlayout}"
+    implementation "androidx.recyclerview:recyclerview:${androidx.recyclerview}"
+    implementation "androidx.cardview:cardview:${androidx.cardview}"
+
+    implementation "com.google.android.material:material:${google.material}"
+    implementation "com.google.code.gson:gson:${google.gson}"
+
+    implementation "androidx.room:room-runtime:${androidx.room}"
+    annotationProcessor "androidx.room:room-compiler:${androidx.room}"
+
+    implementation "com.jaredrummler:android-device-names:${thirdParty.deviceNames}"
+    implementation "com.amitshekhar.android:debug-db:${thirdParty.debugDb}"
+    implementation "com.github.bumptech.glide:glide:${thirdParty.glide}"
 }

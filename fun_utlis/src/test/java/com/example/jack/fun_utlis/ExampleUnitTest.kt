@@ -1,7 +1,8 @@
-package com.example.jack.funbokkeeping
+package com.example.jack.fun_utlis
+
+import org.junit.Test
 
 import org.junit.Assert.*
-import org.junit.Test
 
 /**
  * Example local unit test, which will execute on the development machine (host).
