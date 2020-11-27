@@ -3,4 +3,41 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+
+    <!-- Transparency 100%-->
+    <color name="transparency_100">#00000000</color>
+    <color name="transparency_80">#33000000</color>
+    <color name="transparency_17">#d4000000</color>
+
+    <color name="pale_teal">#92b7bc</color>
+    <color name="light_blue_grey">#c4d8da</color>
+    <color name="slate_grey">#585d70</color>
+    <color name="ice_blue">#f2feff</color>
+    <color name="light_grey_blue">#9da7c9</color>
+    <color name="light_salmon">#edbc9f</color>
+    <color name="light_peach">#f5dacb</color>
+    <color name="khaki">#a19a6b</color>
+    <color name="very_light_pink">#fff7f2</color>
+    <color name="light_tan">#faefa7</color>
+    <color name="black">#1f1f1f</color>
+    <color name="steel">#89898a</color>
+    <color name="white">#ffffff</color>
+    <color name="very_light_pink_two">#dbdbdb</color>
+    <color name="white_two">#f5f5f5</color>
+    <color name="deep_sky_blue">#0a84ff</color>
+    <color name="battleship_grey">#6d747c</color>
+    <color name="faded_red">#c9454a</color>
+    <color name="butterscotch">#f5c243</color>
+    <color name="dirty_blue">#48a1b7</color>
+    <color name="boring_green">#5bbd6a</color>
+    <color name="macaroni_and_cheese">#feba2c</color>
+    <color name="cherry_red">#f11c1d</color>
+    <color name="brown_grey">#878787</color>
+    <color name="berry">#941751</color>
+    <color name="plum">#4a0c29</color>
+    <color name="charcoal_grey_29">#4a3c3c43</color>
+    <color name="brownish_grey">#707070</color>
+    <color name="very_light_green">#daf2de</color>
+    <color name="light_gray">#c1c1c1</color>
+
 </resources>
