@@ -1,3 +1,4 @@
+include ':funRoomDatabase'
 include ':fun_utlis'
 include ':app'
 rootProject.name = "FunBokkeeping"

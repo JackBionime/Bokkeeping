@@ -1,7 +1,6 @@
 package com.example.jack.funbokkeeping.resource
 
 import android.content.Context
-import android.graphics.drawable.Drawable
 import androidx.core.content.ContextCompat
 
 class ResourceService : IResourceService {
@@ -18,9 +17,5 @@ class ResourceService : IResourceService {
 
     override fun getColor(res: Int): Int {
         return ContextCompat.getColor(context, res)
-    }
-
-    override fun getDrawable(res: Int): Drawable? {
-        return ContextCompat.getDrawable(context, res)
     }
 }

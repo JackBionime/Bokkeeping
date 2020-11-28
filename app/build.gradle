@@ -21,6 +21,9 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+        debug {
+            resValue("string", "PORT_NUMBER", "8081")
+        }
     }
 }
 
@@ -30,6 +33,7 @@ preBuild.dependsOn formatApply
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation project(':fun_utlis')
+    implementation project(':funRoomDatabase')
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:${buildConfig.kotlin_version}"
     implementation "androidx.core:core-ktx:${androidx.coreKtx}"
@@ -41,10 +45,7 @@ dependencies {
     implementation "com.google.android.material:material:${google.material}"
     implementation "com.google.code.gson:gson:${google.gson}"
 
-    implementation "androidx.room:room-runtime:${androidx.room}"
-    annotationProcessor "androidx.room:room-compiler:${androidx.room}"
-
     implementation "com.jaredrummler:android-device-names:${thirdParty.deviceNames}"
-    implementation "com.amitshekhar.android:debug-db:${thirdParty.debugDb}"
+    debugImplementation "com.amitshekhar.android:debug-db:${thirdParty.debugDb}"
     implementation "com.github.bumptech.glide:glide:${thirdParty.glide}"
 }
