@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigationChart"
+        android:icon="@drawable/bottom_navigation_chart_selector"
+        android:title="@string/title_chart" />
+
+    <item
+        android:id="@+id/navigationDiary"
+        android:icon="@drawable/bottom_navigation_diary_selector"
+        android:title="@string/title_diary" />
+
+    <item
+        android:id="@+id/navigationAboutMe"
+        android:icon="@drawable/bottom_navigation_find_member_selector"
+        android:title="@string/title_about_me" />
+
+</menu>

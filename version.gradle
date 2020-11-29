@@ -12,6 +12,7 @@ ext.androidx = [
         'constraintlayout' :'2.0.4',
         'recyclerview' :'1.1.0',
         'cardview' :'1.0.0',
+        'fragment' :'2.3.1',
         'room' :'2.2.5'
 ]
 

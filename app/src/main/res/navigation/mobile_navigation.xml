@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainNavigation"
+    app:startDestination="@id/navigationChart">
+
+    <fragment
+        android:id="@+id/navigationChart"
+        android:name="com.example.jack.funbokkeeping.fragments.chart.ChartFragment"
+        android:label="@string/title_chart"
+        tools:layout="@layout/fragment_chart"/>
+
+    <fragment
+        android:id="@+id/navigationDiary"
+        android:name="com.example.jack.funbokkeeping.fragments.diary.DiaryFragment"
+        android:label="@string/title_diary"
+        tools:layout="@layout/fragment_diary"/>
+
+    <fragment
+        android:id="@+id/navigationAboutMe"
+        android:name="com.example.jack.funbokkeeping.fragments.about_me.AboutMeFragment"
+        android:label="@string/title_about_me"
+        tools:layout="@layout/fragment_about_me"/>
+
+</navigation>

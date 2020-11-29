@@ -41,11 +41,14 @@ dependencies {
     implementation "androidx.constraintlayout:constraintlayout:${androidx.constraintlayout}"
     implementation "androidx.recyclerview:recyclerview:${androidx.recyclerview}"
     implementation "androidx.cardview:cardview:${androidx.cardview}"
+    implementation "androidx.navigation:navigation-fragment-ktx:${androidx.fragment}"
+    implementation "androidx.navigation:navigation-ui-ktx:${androidx.fragment}"
 
     implementation "com.google.android.material:material:${google.material}"
     implementation "com.google.code.gson:gson:${google.gson}"
 
     implementation "com.jaredrummler:android-device-names:${thirdParty.deviceNames}"
+
     debugImplementation "com.amitshekhar.android:debug-db:${thirdParty.debugDb}"
     implementation "com.github.bumptech.glide:glide:${thirdParty.glide}"
 }

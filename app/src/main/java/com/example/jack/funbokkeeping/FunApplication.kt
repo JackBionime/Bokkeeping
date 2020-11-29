@@ -12,7 +12,6 @@ class FunApplication : Application() {
     companion object {
         lateinit var resourceService: IResourceService
         lateinit var databaseManager: IDatabaseManager
-        val application = FunApplication
     }
 
     override fun onCreate() {
